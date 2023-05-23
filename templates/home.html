@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tag -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/Favicon.png') }}">
+
+
+        <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  
+        <!-- Box icon -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>News Classification</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <img src="/static/img/Favicon.png" alt="Nepali New Classification">
+                        <span>Nepali News Classification</span>
+                    </a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#catogery" class="nav__link">Catogery</a></li>
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                        
+                        <li class="nav__item"><a href="{{ url_for('login') }}" class="nav__link">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="l-main">
+            <!-- Home section-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hey,<br><span class="home__title-color">Classify Your News</span><br>With Us</h1>
+                    <a href="{{url_for('dashboard') }}" class="button">Click Here</a>
+                </div>
+                <div class="home__img">                  
+                    <img src="/static/img/pic_ (3).jpg" alt="">
+                </div>
+            </section>
+
+
+            <!-- About section-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About Us</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="/static/img/pic_ (10).jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Nepali News Classification </h2>
+                        <p class="about__text">This is a Platform where you can easily classify your Nepali news. Here you can find your news in different catogery
+                            like Technology, Politics, Business, Health, Politics and many more. As we process only the Nepali News for this time 
+                            but we are planning to use it for different language news. </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!-- Catogery section-->
+            <section class="catogery section" id="catogery">
+                <h2 class="section-title">Catogery</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="#" class="work__img">
+                        <img src="/static/img/pic_ (20).jpg" alt="">
+                        <div class="catogery_img_text">
+                            <div class="text">Health</div>
+                        </div>
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="/static/img/pic_ (17).jpg" alt="">
+                        <div class="catogery_img_text">
+                            <div class="text">Politics</div>
+                        </div>
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="/static/img/pic_ (18).jpg" alt="">
+                        <div class="catogery_img_text">
+                            <div class="text">Business</div>
+                        </div>
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="/static/img/pic_ (19).jpg" alt="">
+                        <div class="catogery_img_text">
+                            <div class="text">Sports</div>
+                        </div>
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="/static/img/pic_ (21).jpg" alt="">
+                        <div class="catogery_img_text">
+                            <div class="text">Technology</div>
+                        </div>
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="/static/img/pic_ (16).jpg" alt="">
+                        <div class="catogery_img_text">
+                            <div class="text">Entertainment</div>
+                        </div>
+                    </a>                
+                </div>
+
+            </section>
+
+
+
+            <!-- Contact section-->
+            <!-- <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form" >
+
+                        <input type="text" id="name" name="name"  placeholder="Name" 
+                                    class="contact__input" required>
+
+                        <input type="email" id="email" name="email" placeholder="Email" 
+                                    class="contact__input" required>
+
+                        <textarea id="message" placeholder="Your Message" cols="0" rows="10" 
+                                    class="contact__input" name="message" required></textarea>
+
+                        <button class="contact__button button">Submit</button>
+
+                    </form>
+                </div>
+            </section> -->
+        </main>
+
+        <!-- Footer section-->
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Copyright 2023. All rigths reserved</p>
+        </footer>
+
+
+        <!-- Scroll Reveal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- MAIN JS -->
+        <!-- <script src="assets/js/main.js"></script> -->
+
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        
+    </body>
+</html>
