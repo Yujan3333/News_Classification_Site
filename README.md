@@ -1,1 +1,3 @@
-# Nepali News Classification implementing Multinomial Naive Bayes Algorithm
+# Nepali News Classification System that implements Multinomial Naive Bayes Algorithm
+
+yujan.pythonanywhere.com
